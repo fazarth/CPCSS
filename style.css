@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Viga", sans-serif;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background-image: url("https://techcrunch.com/wp-content/uploads/2019/04/Bitmoji-For-Games-Platformer.png?");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  background-size: 100%;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4caf50;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.content {
+  float: left;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.cardcontent {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 30%;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.cardcontent:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardcontent img {
+  border-radius: 1%;
+  width: 100%;
+  height: 250px;
+}
+
+.containertext {
+  padding: 2px 16px;
+}
+
+.card h2 {
+  text-align: center;
+}
+
+/* galery */
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 5px;
+  border-radius: 2%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* OUR SERVICE */
+.polaroid {
+  width: 33%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px;
+}
+
+.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+/* Clear floats after the columns */
+.main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsif */
+@media screen and (max-width: 1100px) {
+  .header {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .content,
+  .aside {
+    width: 100%;
+    padding: 0;
+  }
+
+  .header {
+    height: 300px;
+  }
+
+  .header h1 {
+    font-size: 30px;
+  }
+
+  .header p {
+    font-size: 10px;
+  }
+  .cardcontent {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav a {
+    float: none;
+    width: 100%;
+  }
+
+  .header {
+    height: 200px;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+}
